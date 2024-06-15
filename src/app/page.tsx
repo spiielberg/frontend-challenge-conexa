@@ -1,3 +1,4 @@
+import { Calendar } from '@/app/_components/calendar'
 import { UserCard } from '@/app/_components/user-card'
 import { getUser } from '@/data/user'
 
@@ -13,8 +14,10 @@ const Home = async () => {
   }
 
   return (
-    <div className="p-6">
+    <div className="flex flex-col gap-8 p-6 lg:flex-row">
       <UserCard user={user} />
+
+      <Calendar city={user.city} schedules={user.schedules} />
     </div>
   )
 }

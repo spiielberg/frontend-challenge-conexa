@@ -14,10 +14,12 @@ const Home = async () => {
   }
 
   return (
-    <div className="flex flex-col gap-8 p-6 lg:flex-row">
-      <UserCard user={user} />
+    <div className="flex w-full justify-center">
+      <div className="container flex flex-col items-center gap-8 p-6 lg:flex-row lg:items-start">
+        <UserCard user={user} />
 
-      <Calendar city={user.city} schedules={user.schedules} />
+        <Calendar city={user.city} schedules={user.schedules} />
+      </div>
     </div>
   )
 }

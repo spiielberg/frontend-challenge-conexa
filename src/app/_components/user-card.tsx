@@ -16,7 +16,7 @@ export const UserCard = ({ user }: UserCardProps) => {
             alt={user.name}
             width={192}
             height={192}
-            className="size-48 rounded-full"
+            className="size-28 rounded-full md:size-48"
             data-testid="user-image"
           />
         ) : (
